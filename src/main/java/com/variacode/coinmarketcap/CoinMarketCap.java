@@ -195,6 +195,26 @@ public class CoinMarketCap {
         public void setLastUpdated(Long lastUpdated) {
             this.lastUpdated = lastUpdated;
         }
+
+        @Override
+        public String toString() {
+            return "Ticker{" +
+                    "id='" + id + '\'' +
+                    ", name='" + name + '\'' +
+                    ", symbol='" + symbol + '\'' +
+                    ", rank=" + rank +
+                    ", priceUsd=" + priceUsd +
+                    ", priceBtc=" + priceBtc +
+                    ", _24hVolumeUsd=" + _24hVolumeUsd +
+                    ", marketCapUsd=" + marketCapUsd +
+                    ", availableSupply=" + availableSupply +
+                    ", totalSupply=" + totalSupply +
+                    ", percentChange1h=" + percentChange1h +
+                    ", percentChange24h=" + percentChange24h +
+                    ", percentChange7d=" + percentChange7d +
+                    ", lastUpdated=" + lastUpdated +
+                    '}';
+        }
     }
 
     public class Global {
