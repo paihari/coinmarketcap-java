@@ -302,12 +302,12 @@ public class CoinMarketCap {
 
     private String getJsonResponse(final String url) throws CoinMarketCapException {
 
-        System.out.println("RATE INIT " + new Date());
+
         //maybe waits globally
         if (throttle) {
             rateLimiter.acquire();
         }
-        System.out.println("RATE CLOSe " + new Date());
+
 
         try {
             URL obj = new URL(url);
